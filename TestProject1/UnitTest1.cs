@@ -6,7 +6,7 @@ namespace TestProject1
     public class UnitTest1
     {
         private readonly Mock<IPassengerManager> mockDtaRepository = new Mock<IPassengerManager>();
-        private readonly PassengerController _passengerController;
+        private readonly PassengerDATAController _passengerController;
         public PassengerUnitTest()
         {
             _passengerController = new PassengerController(mockDtaRepository.Object);
