@@ -16,9 +16,10 @@ namespace TestProject1
         {
             List<PassengerView> users = new List<PassengerView>()
             {
-                new PassengerView() {P_No=1,F_Name="Harshil",L_Name="Sheth",Phone=123456789},
+               
                 new PassengerView() {P_No=1,F_Name="Vrunda",L_Name="Savaliya",Phone=1234565789},
                 new PassengerView() {P_No=1,F_Name="Vidhi",L_Name="Kapadiya",Phone=123456789},
+                 new PassengerView() {P_No=1,F_Name="Harshil",L_Name="Sheth",Phone=123456789},
 
             };
             return users;
@@ -58,9 +59,9 @@ namespace TestProject1
             // Arrange
             var passenger = new PassengerView();
             passenger.P_No = 1;
-            passenger.F_Name = "Harhsil";
-            passenger.L_Name = "Sheth";
-            passenger.Phone = 123456789;
+            passenger.F_Name = "Vrunda";
+            passenger.L_Name = "Savaliya";
+            passenger.Phone = 8758394357;
 
             // Act
             var responseObj = mockDtaRepository.Setup(x => x.GetPassenger(passenger.P_No)).Returns(passenger);
@@ -87,9 +88,9 @@ namespace TestProject1
         {
             var newPassenger = new PassengerView();
             newPassenger.P_No = 4;
-            newPassenger.F_Name = "Raj";
+            newPassenger.F_Name = "Hetvi";
             newPassenger.L_Name = "shah";
-            newPassenger.Phone = 123456789;
+            newPassenger.Phone = 3658963659;
             // Act
             var response = mockDtaRepository.Setup(x => x.CreateNewPassenger(newPassenger)).Returns("Added succeffuly");
             var result = _passengerController.PostPassenger(newPassenger);
@@ -116,9 +117,9 @@ namespace TestProject1
             // Arrange
             var UpdatePassenger = new PassengerView();
             UpdatePassenger.P_No = 4;
-            UpdatePassenger.F_Name = "Bhargav";
-            UpdatePassenger.L_Name = "Bhambhroliya";
-            UpdatePassenger.Phone = 123456789;
+            UpdatePassenger.F_Name = "vidhi";
+            UpdatePassenger.L_Name = "kapadia";
+            UpdatePassenger.Phone = 8965236698;
 
             // Act
             var resultObj = mockDtaRepository.Setup(x => x.UpdatePassenger(4, UpdatePassenger)).Returns("Passenger updated");
