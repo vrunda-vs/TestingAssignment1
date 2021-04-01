@@ -17,9 +17,9 @@ namespace TestProject1
             List<PassengerView> users = new List<PassengerView>()
             {
                
-                new PassengerView() {P_No=1,F_Name="Vrunda",L_Name="Savaliya",Phone=1234565789},
-                new PassengerView() {P_No=1,F_Name="Vidhi",L_Name="Kapadiya",Phone=123456789},
-                 new PassengerView() {P_No=1,F_Name="Harshil",L_Name="Sheth",Phone=123456789},
+                new PassengerView() {P_No=1,F_Name="Vrunda",L_Name="Savaliya",Phone=8758695896},
+                new PassengerView() {P_No=1,F_Name="Vidhi",L_Name="Kapadiya",Phone=9925963637},
+                 new PassengerView() {P_No=1,F_Name="Harshil",L_Name="Sheth",Phone=9658993005},
 
             };
             return users;
