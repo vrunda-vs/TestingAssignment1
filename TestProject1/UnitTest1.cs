@@ -26,7 +26,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void GetAllPassenger1()
+        public void GetAllPassengertestcase1()
         {
             // Arrange
             var resultObj = mockDtaRepository.Setup(x => x.GetAllPassengers()).Returns(GetPassenger());
@@ -40,7 +40,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void GetAllPassenger2()
+        public void GetAllPassengertestcase2()
         {
             // Arrange
             var resultObj = mockDtaRepository.Setup(x => x.GetAllPassengers()).Returns(GetPassenger());
@@ -54,7 +54,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void GetPassengerById1()
+        public void GetPassengerByIdtestcase3()
         {
             // Arrange
             var passenger = new PassengerView();
@@ -71,7 +71,7 @@ namespace TestProject1
             Assert.NotNull(result);
         }
         [Fact]
-        public void GetPassengerById2()
+        public void GetPassengerByIdtestcase4()
         {
             // Arrange
             var passenger = new PassengerView();
@@ -84,7 +84,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void AddPassenger1()
+        public void AddPassengertestcase5()
         {
             var newPassenger = new PassengerView();
             newPassenger.P_No = 4;
@@ -100,7 +100,7 @@ namespace TestProject1
         }
 
         [Fact]
-        public void AddPassenger2()
+        public void AddPassengertestcase6()
         {
             var newPassenger = new PassengerView();
 
@@ -112,7 +112,7 @@ namespace TestProject1
             Assert.NotNull(result);
         }
         [Fact]
-        public void UpdatePassenger1()
+        public void UpdatePassengertestcase7()
         {
             // Arrange
             var UpdatePassenger = new PassengerView();
@@ -128,7 +128,7 @@ namespace TestProject1
             Assert.Equal("Passenger updated", response);
         }
         [Fact]
-        public void UpdatePassenger2()
+        public void UpdatePassengertestcase8()
         {
             // Arrange
             var UpdatePassenger = new PassengerView();
@@ -140,7 +140,7 @@ namespace TestProject1
             Assert.NotEqual("Passenger updated", response);
         }
         [Fact]
-        public void DeletePassenger1()
+        public void DeletePassengertestcase9()
         {
             var passenger = new PassengerView();
             passenger.P_No = 1;
@@ -155,7 +155,7 @@ namespace TestProject1
 
         }
         [Fact]
-        public void DeletePassenger2()
+        public void DeletePassengertestcase10()
         {
             var passenger = new PassengerView();
             passenger.P_No = 4;
